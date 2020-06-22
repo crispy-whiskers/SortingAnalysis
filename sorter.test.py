@@ -8,7 +8,11 @@ def verify_sorted(arr):
             else:
                 return False
         return True
-        
+
+
+
 class SorterTest(unittest.TestCase):
-   def bubble_test(self):
-       pass
+    def selection_test(self):
+        pass
+    def bubble_test(self):
+        pass
