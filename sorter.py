@@ -6,7 +6,7 @@ def countingSort(arr, exp1): #specialized for radix sort
   
     for i in range(0, n): 
         index = (arr[i]/exp1) 
-        count[ (index)%10 ] += 1
+        count[ (int(index))%10 ] += 1
  
     for i in range(1,10): 
         count[i] += count[i-1] 
@@ -14,8 +14,8 @@ def countingSort(arr, exp1): #specialized for radix sort
     i = n-1
     while i>=0: 
         index = (arr[i]/exp1) 
-        output[ count[ (index)%10 ] - 1] = arr[i] 
-        count[ (index)%10 ] -= 1
+        output[ count[ int(index)%10 ] - 1] = arr[i] 
+        count[ int(index)%10 ] -= 1
         i -= 1
    
     i = 0
@@ -108,9 +108,6 @@ def mergeSort(arr,l,r):
 
 class Sorter:
 
-    def __init__(self):
-        self.tim_sort = list.sort
-
     def selection_sort(self, arr):
         for i in range(len(arr)): 
             min_idx = i 
@@ -133,28 +130,6 @@ class Sorter:
 
     def merge_sort(self, arr):
         return mergeSort(arr, 0, len(arr)-1)
-
-    def count_sort(self, arr): 
-
-        output = [0 for i in range(256)] 
-    
-        count = [0 for i in range(256)] 
-
-        ans = ["" for _ in arr] 
-
-        for i in arr: 
-            count[ord(i)] += 1
-    
-        for i in range(256): 
-            count[i] += count[i-1] 
-
-        for i in range(len(arr)): 
-            output[count[ord(arr[i])]-1] = arr[i] 
-            count[ord(arr[i])] -= 1
-
-        for i in range(len(arr)): 
-            ans[i] = output[i] 
-        return ans
 
     def radix_sort(self, arr): 
         max1 = max(arr) 
@@ -187,26 +162,6 @@ class Sorter:
             heapify(arr, i, 0) 
         return arr
     
-    def bucket_sort(self, arr):
-            
-        x = [] 
-        slot_num = 10 
-        for i in range(slot_num): 
-            x.append([]) 
-            
-        for j in arr: 
-            index_b = int(slot_num * j)  
-            x[index_b].append(j) 
-        
-        for i in range(slot_num): 
-            x[i] = self.insertion_sort(x[i]) 
-            
-        k = 0
-        for i in range(slot_num): 
-            for j in range(len(x[i])): 
-                arr[k] = x[i][j] 
-                k += 1
-        return arr 
     def cycle_sort(self, arr): 
         writes = 0 
         
@@ -238,7 +193,7 @@ class Sorter:
                 arr[pos], item = item, arr[pos] 
                 writes += 1
             
-        return writes
+        return arr
     def pigeonhole_sort(self, arr): 
         my_min = min(arr) 
         my_max = max(arr) 
@@ -255,4 +210,7 @@ class Sorter:
                 holes[count] -= 1
                 arr[i] = count + my_min 
                 i += 1
+        return arr
+    def tim_sort(self, arr):
+        arr.sort()
         return arr

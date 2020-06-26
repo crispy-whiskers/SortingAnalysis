@@ -36,21 +36,13 @@ class SorterTest(unittest.TestCase):
         s = [random.randint(1, 1000) for i in range(10000)]
         l = sort.heap_sort(s)
         self.assertTrue(verify_sorted(l))
-    def test_count(self):
-        s = [random.randint(1, 1000) for i in range(10000)]
-        l = sort.count_sort(s)
-        self.assertTrue(verify_sorted(l))
     def test_radix(self):
         s = [random.randint(1, 1000) for i in range(10000)]
         l = sort.radix_sort(s)
         self.assertTrue(verify_sorted(l))
-    def test_bucket(self):
-        s = [random.randint(1, 1000) for i in range(10000)]
-        l = sort.bucket_sort(s)
-        self.assertTrue(verify_sorted(l))
     def test_tim(self):
         s = [random.randint(1, 1000) for i in range(10000)]
-        l = s.sort()
+        l = sort.tim_sort(s)
         self.assertTrue(verify_sorted(l))
     def test_pigeonhole(self):
         s = [random.randint(1, 1000) for i in range(10000)]
