@@ -17,7 +17,7 @@ class SorterTest(unittest.TestCase):
         l = sort.selection_sort(s)
         self.assertTrue(verify_sorted(l))
     def test_insertion(self):
-        s = [random.randint(1, 1000) for i in range(10000)]
+        s = [random.randint(1, 10000) for i in range(10000)]
         l = sort.insertion_sort(s)
         self.assertTrue(verify_sorted(l))
     def test_bubble(self):

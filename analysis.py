@@ -1,9 +1,19 @@
 import sorter, timeit
 
 setup = '''
-import random
+import random, sorter
 
-s = [random.random() for i in range(10000)]
-timsort = list.sort
+s = [random.randint(1,500) for i in range(10000)]
+sort = sorter.Sorter()
+
 '''
-print(min(timeit.Timer('a=s[:]; timsort(a)', setup=setup).repeat(7, 1000)))
+
+sorts = [name for name, val  in sorter.Sorter.__dict__.items() if callable(val)] 
+times = []
+for alg in sorts:
+    print('analyzing '+alg)
+    times.append(min(timeit.Timer('a=s[:]; sort.'+alg+'(a)', setup=setup).repeat(5, 1)))
+
+results = {k:v for k,v in zip(sorts, times)}
+
+print(results)
