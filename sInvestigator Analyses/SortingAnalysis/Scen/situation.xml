@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<SituationKB version="1.0">
+<SituationExamples>
+<SituationExample version="1.0" index="0">
+      <NLPattern>
+        <Fragments>
+          <String>topic</String>
+        </Fragments>
+      </NLPattern>
+      <NLPattern>
+        <Fragments />
+      </NLPattern>
+    </SituationExample>
+</SituationExamples>
+<IntelligenceQuestionExamples>
+<IntelligenceQuestionExample version="1.1" index="0" main="true">
+      <NLPattern>
+        <Fragments>
+          <String>What is the best sorting algorithm overall?</String>
+        </Fragments>
+      </NLPattern>
+      <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
+    </IntelligenceQuestionExample>
+</IntelligenceQuestionExamples>
+<HypothesisExamples>
+<HypothesisExample version="1.0" index="0" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>O(n*log(n)) Algorithms</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="1" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>O(n+k) Algorithms</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="2" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>O(n^2) Algorithms</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="3" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>O(n) Algorithms</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="4" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Miscellaneous Algorithms</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="5" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>TimSort</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="8" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>It is generally accepted by many computer scientists that algorithms of this complexity are the most efficient for most cases.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="9" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>It has been adopted as the default sorting method by many modern programming languages.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="10" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>It is an adaptive sorting algorithm. In the worst case, it takes O(n*log(n)) time, but in the best case, when the data is nearly/already sorted, it takes O(n) time.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="11" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>These algorithms perform better on small data sets due to their simplicity.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+</HypothesisExamples>
+<ArgumentStepExamples>
+<ArgumentStepExample version="1.0" index="0" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="2" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="8" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="3" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="very likely" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="4" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="5" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="11" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+</ArgumentStepExamples>
+<EvidenceAssociationMap>
+    <hypothesisEvidenceAssociationList />
+  </EvidenceAssociationMap>
+</SituationKB>

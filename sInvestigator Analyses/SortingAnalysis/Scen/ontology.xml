@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Ontology version="2">
+<Instances>
+<Instance name="E1 evidence">
+      <DirectSuperConcepts>
+        <ConceptReference name="evidence" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="E1 evidence" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+</Instances>
+</Ontology>

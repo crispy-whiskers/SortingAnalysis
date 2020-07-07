@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<KBDescription name="User" type="likeliness" major="0" minor="0" revision="0" canCommit="false" imported="false">
+  <Include name="EBR4 Probability" major="0" minor="0" folder="..\_SharedKBPart_\EBR4 Probability" />
+</KBDescription>
