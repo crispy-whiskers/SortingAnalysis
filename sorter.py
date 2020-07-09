@@ -108,7 +108,7 @@ def mergeSort(arr,l,r):
 
 class Sorter:
 
-    def selection_sort(self, arr):
+    def selection_sort(self, arr): #O(n^2)
         for i in range(len(arr)): 
             min_idx = i 
             for j in range(i+1, len(arr)): 
@@ -117,7 +117,7 @@ class Sorter:
             arr[i], arr[min_idx] = arr[min_idx], arr[i] 
         return arr
 
-    def bubble_sort(self, arr):
+    def bubble_sort(self, arr): #O(n^2)
         n = len(arr) 
         for i in range(n-1): 
             for j in range(0, n-i-1): 
@@ -125,13 +125,13 @@ class Sorter:
                     arr[j], arr[j+1] = arr[j+1], arr[j]
         return arr
     
-    def quick_sort(self, arr):
+    def quick_sort(self, arr): #O(nlogn)
         return quickSort(arr, 0, len(arr)-1)
 
-    def merge_sort(self, arr):
+    def merge_sort(self, arr): #O(nlogn)
         return mergeSort(arr, 0, len(arr)-1)
 
-    def radix_sort(self, arr): 
+    def radix_sort(self, arr): #O(nw)
         max1 = max(arr) 
         
         exp = 1
@@ -140,7 +140,7 @@ class Sorter:
             exp *= 10
         return arr
 
-    def insertion_sort(self, arr): 
+    def insertion_sort(self, arr): #O(n^2)
         for i in range(1, len(arr)): 
     
             key = arr[i] 
@@ -151,7 +151,7 @@ class Sorter:
             arr[j + 1] = key 
         return arr
     
-    def heap_sort(self, arr): 
+    def heap_sort(self, arr): #O(nlogn)
         n = len(arr) 
     
         for i in range(n//2 - 1, -1, -1): 
@@ -162,7 +162,7 @@ class Sorter:
             heapify(arr, i, 0) 
         return arr
     
-    def cycle_sort(self, arr): 
+    def cycle_sort(self, arr): # O(n^2)
         writes = 0 
         
         for cycleStart in range(0, len(arr) - 1): 
@@ -194,7 +194,7 @@ class Sorter:
                 writes += 1
             
         return arr
-    def pigeonhole_sort(self, arr): 
+    def pigeonhole_sort(self, arr): #O(n+k)
         my_min = min(arr) 
         my_max = max(arr) 
         size = my_max - my_min + 1
@@ -211,6 +211,6 @@ class Sorter:
                 arr[i] = count + my_min 
                 i += 1
         return arr
-    def tim_sort(self, arr):
+    def tim_sort(self, arr): #O(nlogn), O(n) best case
         arr.sort()
         return arr

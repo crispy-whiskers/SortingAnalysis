@@ -31,14 +31,6 @@
       </NLPattern>
       <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
     </HypothesisExample>
-<HypothesisExample version="1.0" index="1" negation="false">
-      <NLPattern>
-        <Fragments>
-          <String>O(n+k) Algorithms</String>
-        </Fragments>
-      </NLPattern>
-      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
-    </HypothesisExample>
 <HypothesisExample version="1.0" index="2" negation="false">
       <NLPattern>
         <Fragments>
@@ -90,11 +82,26 @@
           <String>It is an adaptive sorting algorithm. In the worst case, it takes O(n*log(n)) time, but in the best case, when the data is nearly/already sorted, it takes O(n) time.</String>
         </Fragments>
       </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="almost certain" />
     </HypothesisExample>
 <HypothesisExample version="1.0" index="11" negation="false">
       <NLPattern>
         <Fragments>
           <String>These algorithms perform better on small data sets due to their simplicity.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="12" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>These algorithms performed the worst out of all the tests.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="13" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>All of these algorithms sorted the data set under a second.</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -131,6 +138,18 @@
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="11" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="6" favoring="false">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="7" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>

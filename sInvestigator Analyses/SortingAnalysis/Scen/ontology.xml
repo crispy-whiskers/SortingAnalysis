@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="E1 evidence">
+<Instance name="E1 Average Sorting Time">
       <DirectSuperConcepts>
         <ConceptReference name="evidence" />
       </DirectSuperConcepts>
@@ -11,7 +11,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="E1 evidence" />
+              <InstanceReference name="E1 Average Sorting Time" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -21,4 +21,28 @@
       </NLInfo>
     </Instance>
 </Instances>
+<Facts>
+<Fact>
+      <FeatureReference name="has as URL" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E1 Average Sorting Time" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>https://github.com/ladsfdsfs/SortingAnalysis</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as description" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E1 Average Sorting Time" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyText>
+          <NLPattern>
+            <Fragments />
+          </NLPattern>
+        </OntologyText>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+</Facts>
 </Ontology>
