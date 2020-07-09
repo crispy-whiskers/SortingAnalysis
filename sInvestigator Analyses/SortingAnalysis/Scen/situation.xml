@@ -68,6 +68,7 @@
           <String>It is generally accepted by many computer scientists that algorithms of this complexity are the most efficient for most cases.</String>
         </Fragments>
       </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="very likely" />
     </HypothesisExample>
 <HypothesisExample version="1.0" index="9" negation="false">
       <NLPattern>
@@ -102,6 +103,44 @@
       <NLPattern>
         <Fragments>
           <String>All of these algorithms sorted the data set under a second.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="14" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="15" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="16" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E2 Python Documentation in Sorting" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="17" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E2 Python Documentation in Sorting" />
+          </OntologyEntity>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -150,6 +189,30 @@
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="8" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="14" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="9" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="15" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="10" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="11" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="17" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="E1 Average Sorting Time">
+<Instance name="E2 Python Documentation in Sorting">
       <DirectSuperConcepts>
         <ConceptReference name="evidence" />
       </DirectSuperConcepts>
@@ -11,7 +11,26 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="E1 Average Sorting Time" />
+              <InstanceReference name="E2 Python Documentation in Sorting" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="E1 Results of Sorting Times for n at 10000">
+      <DirectSuperConcepts>
+        <ConceptReference name="evidence" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -26,20 +45,58 @@
       <FeatureReference name="has as URL" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="E1 Average Sorting Time" />
+        <InstanceReference name="E2 Python Documentation in Sorting" />
         <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>https://github.com/ladsfdsfs/SortingAnalysis</OntologyString>
+        <OntologyString>https://wiki.python.org/moin/HowTo/Sorting</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as URL" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString></OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
       <FeatureReference name="has as description" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="E1 Average Sorting Time" />
+        <InstanceReference name="E2 Python Documentation in Sorting" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyText>
           <NLPattern>
-            <Fragments />
+            <Fragments>
+              <String>"The Timsort algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."</String>
+            </Fragments>
+          </NLPattern>
+        </OntologyText>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as description" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyText>
+          <NLPattern>
+            <Fragments>
+              <String>On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested for accurate sorting.</String>
+            </Fragments>
           </NLPattern>
         </OntologyText>
       </ConstantInstantiatedFormalParameters>
