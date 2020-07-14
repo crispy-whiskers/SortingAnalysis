@@ -1,3 +1,1001 @@
 <?xml version="1.0"?>
 <ReportKB version="1.0">
+<ReportComponentExamples>
+<ReportHypothesisComponentExample version="1.0" index="0">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
+      <HypothesisTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Hypothesis 1: </String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisTitleNLPattern>
+      <HypothesisDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Miscellaneous Algorithms : certain 100%</String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>Miscellaneous Algorithms</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.004</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <InterfaceIndex>0</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportHypothesisComponentExample>
+<ReportHypothesisComponentExample version="1.0" index="1">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <HypothesisTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Hypothesis 2: </String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisTitleNLPattern>
+      <HypothesisDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>O(n*log(n)) Algorithms : very likely 80-95%</String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>O(n*log(n)) Algorithms</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.000</HypothesisExternalID>
+        <HypothesisProbability>very likely 80-95%</HypothesisProbability>
+      </ReportHypothesisText>
+      <InterfaceIndex>1</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportHypothesisComponentExample>
+<ReportHypothesisComponentExample version="1.0" index="2">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
+      <HypothesisTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Hypothesis 3: </String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisTitleNLPattern>
+      <HypothesisDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>O(n^2) Algorithms : lacking support</String>
+          </Fragments>
+        </NLPattern>
+      </HypothesisDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>O(n^2) Algorithms</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.002</HypothesisExternalID>
+        <HypothesisProbability>lacking support</HypothesisProbability>
+      </ReportHypothesisText>
+      <InterfaceIndex>2</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportHypothesisComponentExample>
+<ReportReasonComponentExample version="1.0" index="3">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>All of these algorithms performed faster than average. 
+(force: very likely 80-95%)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>All of these algorithms performed faster than average.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.013</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>very likely 80-95%</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="1" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>0</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="4">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="3" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="5">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="3" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="6">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="23" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>The best performing algorithm in this category was Quick Sort. 
+(force: not set)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>The best performing algorithm in this category was Quick Sort.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.023</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>not set</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="1" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>1</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="7">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="6" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="8">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="6" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="9">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="11" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>These algorithms perform better on smaller, partially sorted data sets due to their simplicity, especially Insertion Sort. 
+(force: likely 55-80%)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>These algorithms perform better on smaller, partially sorted data sets due to their simplicity, especially Insertion Sort.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.011</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>likely 55-80%</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="2" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>2</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="10">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="9" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="11">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="9" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="12">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>The best performing algorithm in this category was Selection Sort. 
+(force: lacking support)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>The best performing algorithm in this category was Selection Sort.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.019</HypothesisExternalID>
+        <HypothesisProbability>lacking support</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>certain 100%</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="2" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>3</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="13">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="14">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="15">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason against hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>These algorithms performed the worst out of all the tests. The worst performing algorithm came from this category. 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>These algorithms performed the worst out of all the tests. The worst performing algorithm came from this category.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.012</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>certain 100%</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="2" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>4</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="16">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="15" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="17">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="15" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="18">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>The best performing algorithm in this category was TimSort. 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>The best performing algorithm in this category was TimSort.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.005</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>certain 100%</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="0" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>5</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="19">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="20">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportReasonComponentExample version="1.0" index="21">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="26" />
+      <ReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Reason for hypothesis</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonTitleNLPattern>
+      <ReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>sub-hypothesis 
+(force: not set)</String>
+          </Fragments>
+        </NLPattern>
+      </ReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>sub-hypothesis</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.026</HypothesisExternalID>
+        <HypothesisProbability>not set</HypothesisProbability>
+      </ReportHypothesisText>
+      <ReasonRelevance>not set</ReasonRelevance>
+      <ReasonParentHypothesisComponent>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="0" />
+      </ReasonParentHypothesisComponent>
+      <InterfaceIndex>6</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportReasonComponentExample>
+<ReportEvidenceTitleComponentExample version="1.0" index="22">
+      <NLPattern>
+        <Fragments>
+          <String>Evidence</String>
+        </Fragments>
+      </NLPattern>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="21" />
+      </EvidenceParentReasonComponent>
+    </ReportEvidenceTitleComponentExample>
+<ReportAssumptionTitleComponentExample version="1.0" index="23">
+      <NLPattern>
+        <Fragments>
+          <String>Assumption and Collection Requirement</String>
+        </Fragments>
+      </NLPattern>
+      <AssumptionParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="21" />
+      </AssumptionParentReasonComponent>
+    </ReportAssumptionTitleComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="24">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="14" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Direct evidence: On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.
+(credibility: certain 100%)
+(relevance: certain 100%) 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <OntologyEntity>
+                <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+              </OntologyEntity>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.014</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="3" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>0</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="25">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="24" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Direct evidence: On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.
+(credibility: certain 100%)
+(relevance: certain 100%) 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <OntologyEntity>
+                <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+              </OntologyEntity>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.024</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="6" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>1</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="26">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="22" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Direct evidence: </String>
+            <OntologyEntity>
+              <InstanceReference name="E3 Source Code of Algorithms" />
+            </OntologyEntity>
+            <String>
+(credibility: certain 100%)
+(relevance: certain 100%)
+(source: https://github.com/ladsfdsfs/SortingAnalysis ) 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <OntologyEntity>
+                <InstanceReference name="E3 Source Code of Algorithms" />
+              </OntologyEntity>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.022</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="9" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>2</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="27">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason against</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Though it was the best of all O(n^2) algorithms, it still performed significantly slower than algorithms of other categories. This particular algorithm performed about average. 
+(force: almost certain 95-99%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>Though it was the best of all O(n^2) algorithms, it still performed significantly slower than algorithms of other categories. This particular algorithm performed about average.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.020</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>almost certain 95-99%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>3</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="28">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="15" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Direct evidence: On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.
+(credibility: certain 100%)
+(relevance: certain 100%) 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <OntologyEntity>
+                <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+              </OntologyEntity>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.015</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="15" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>4</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="29">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>It has been adopted as the default sorting method by many modern programming languages. 
+(force: very likely 80-95%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>It has been adopted as the default sorting method by many modern programming languages.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.009</HypothesisExternalID>
+        <HypothesisProbability>almost certain 95-99%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>very likely 80-95%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>5</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="30">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>It is an adaptive sorting algorithm. In the worst case, it takes O(n*log(n)) time, but in the best case, when the data is nearly/already sorted, it takes O(n) time. 
+(force: almost certain 95-99%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>It is an adaptive sorting algorithm. In the worst case, it takes O(n*log(n)) time, but in the best case, when the data is nearly/already sorted, it takes O(n) time.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.010</HypothesisExternalID>
+        <HypothesisProbability>almost certain 95-99%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>6</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportSubReasonComponentExample version="1.0" index="31">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="18" />
+      <SubReasonTitleNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>Sub-reason for</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonTitleNLPattern>
+      <SubReasonDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>TimSort had the best time for all the algorithms at .0008 seconds, roughly a tenth of the next fastest algorithm. 
+(force: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </SubReasonDescriptionNLPattern>
+      <ReportHypothesisText>
+        <HypothesisNLPattern>
+          <NLPattern>
+            <Fragments>
+              <String>TimSort had the best time for all the algorithms at .0008 seconds, roughly a tenth of the next fastest algorithm.</String>
+            </Fragments>
+          </NLPattern>
+        </HypothesisNLPattern>
+        <HypothesisExternalID>HE.018</HypothesisExternalID>
+        <HypothesisProbability>certain 100%</HypothesisProbability>
+      </ReportHypothesisText>
+      <SubReasonRelevance>certain 100%</SubReasonRelevance>
+      <SubReasonParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </SubReasonParentReasonComponent>
+      <InterfaceIndex>7</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportSubReasonComponentExample>
+<ReportEvidenceComponentExample version="1.0" index="32">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="21" />
+      <EvidenceDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.
+(credibility: certain 100%)
+(relevance: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </EvidenceDescriptionNLPattern>
+      <EvidenceCredibility>certain 100%</EvidenceCredibility>
+      <EvidenceRelevance>certain 100%</EvidenceRelevance>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </EvidenceParentReasonComponent>
+      <InterfaceIndex>0</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportEvidenceComponentExample>
+<ReportEvidenceComponentExample version="1.0" index="33">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
+      <EvidenceDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>"The Timsort algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."
+(credibility: certain 100%)
+(relevance: almost certain 95-99%)
+(source: https://wiki.python.org/moin/HowTo/Sorting )</String>
+          </Fragments>
+        </NLPattern>
+      </EvidenceDescriptionNLPattern>
+      <EvidenceCredibility>certain 100%</EvidenceCredibility>
+      <EvidenceRelevance>almost certain 95-99%</EvidenceRelevance>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </EvidenceParentReasonComponent>
+      <InterfaceIndex>0</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportEvidenceComponentExample>
+<ReportEvidenceComponentExample version="1.0" index="34">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="17" />
+      <EvidenceDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>"The Timsort algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."
+(credibility: certain 100%)
+(relevance: not set)
+(source: https://wiki.python.org/moin/HowTo/Sorting )</String>
+          </Fragments>
+        </NLPattern>
+      </EvidenceDescriptionNLPattern>
+      <EvidenceCredibility>certain 100%</EvidenceCredibility>
+      <EvidenceRelevance>not set</EvidenceRelevance>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </EvidenceParentReasonComponent>
+      <InterfaceIndex>1</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportEvidenceComponentExample>
+<ReportEvidenceComponentExample version="1.0" index="35">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="25" />
+      <EvidenceDescriptionNLPattern>
+        <NLPattern>
+          <Fragments>
+            <String>On average, for n=10000
+Selection Sort: ~2.5s
+Bubble Sort: ~6.5s
+Quick Sort: ~.03s
+Merge Sort: ~.04s
+Radix Sort: ~3.5s
+Insertion Sort: ~3s
+Heap Sort: ~.05s
+Cycle Sort: ~7.5s
+Pigeonhole Sort: .003s
+Tim Sort: .0008s
+
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.
+(credibility: certain 100%)
+(relevance: certain 100%)</String>
+          </Fragments>
+        </NLPattern>
+      </EvidenceDescriptionNLPattern>
+      <EvidenceCredibility>certain 100%</EvidenceCredibility>
+      <EvidenceRelevance>certain 100%</EvidenceRelevance>
+      <EvidenceParentReasonComponent>
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </EvidenceParentReasonComponent>
+      <InterfaceIndex>2</InterfaceIndex>
+      <UserModified>False</UserModified>
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportEvidenceComponentExample>
+</ReportComponentExamples>
+<ReportExamples>
+<ReportExample version="1.0" index="0">
+      <Components>
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="0" />
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="1" />
+        <ReportHypothesisComponentExampleReference version="1.0" kbPartName="Scen" index="2" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="3" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="4" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="5" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="6" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="7" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="8" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="9" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="10" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="11" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="12" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="13" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="14" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="15" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="16" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="17" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="18" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="19" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="20" />
+        <ReportReasonComponentExampleReference version="1.0" kbPartName="Scen" index="21" />
+        <ReportEvidenceTitleComponentExampleReference version="1.0" kbPartName="Scen" index="22" />
+        <ReportAssumptionTitleComponentExampleReference version="1.0" kbPartName="Scen" index="23" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="24" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="25" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="26" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="27" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="28" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="29" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="30" />
+        <ReportSubReasonComponentExampleReference version="1.0" kbPartName="Scen" index="31" />
+        <ReportEvidenceComponentExampleReference version="1.0" kbPartName="Scen" index="32" />
+        <ReportEvidenceComponentExampleReference version="1.0" kbPartName="Scen" index="33" />
+        <ReportEvidenceComponentExampleReference version="1.0" kbPartName="Scen" index="34" />
+        <ReportEvidenceComponentExampleReference version="1.0" kbPartName="Scen" index="35" />
+      </Components>
+      <RemovedHypotheses />
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+      <AssociatedEvidenceRootExampleID>null</AssociatedEvidenceRootExampleID>
+    </ReportExample>
+</ReportExamples>
 </ReportKB>

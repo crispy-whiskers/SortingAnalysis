@@ -30,6 +30,11 @@ for alg in sorts:
 results = {k:v for k,v in zip(sorts, times)}
 
 print(results)
+
+avg = sum(times)/len(times)
+
+print('Average: '+str(avg))
+
 ind = np.arange(len(results.keys()))
 fig, ax = plt.subplots()
 rects = ax.bar(ind*2, results.values(), .55, color="g")

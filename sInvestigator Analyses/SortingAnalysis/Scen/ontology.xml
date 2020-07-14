@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="E2 Python Documentation in Sorting">
+<Instance name="E3 Source Code of Algorithms">
       <DirectSuperConcepts>
         <ConceptReference name="evidence" />
       </DirectSuperConcepts>
@@ -11,7 +11,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="E2 Python Documentation in Sorting" />
+              <InstanceReference name="E3 Source Code of Algorithms" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -39,15 +39,34 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="E2 Python Documentation in Sorting">
+      <DirectSuperConcepts>
+        <ConceptReference name="evidence" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="E2 Python Documentation in Sorting" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 </Instances>
 <Facts>
 <Fact>
       <FeatureReference name="has as URL" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="E2 Python Documentation in Sorting" />
+        <InstanceReference name="E3 Source Code of Algorithms" />
         <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>https://wiki.python.org/moin/HowTo/Sorting</OntologyString>
+        <OntologyString>https://github.com/ladsfdsfs/SortingAnalysis</OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -60,18 +79,12 @@
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as description" />
+      <FeatureReference name="has as URL" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="E2 Python Documentation in Sorting" />
         <FormalParameterReference name="&lt;P2>" />
-        <OntologyText>
-          <NLPattern>
-            <Fragments>
-              <String>"The Timsort algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."</String>
-            </Fragments>
-          </NLPattern>
-        </OntologyText>
+        <OntologyString>https://wiki.python.org/moin/HowTo/Sorting</OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -95,7 +108,38 @@ Cycle Sort: ~7.5s
 Pigeonhole Sort: .003s
 Tim Sort: .0008s
 
-These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested for accurate sorting.</String>
+Average time: 
+2.35s
+
+These times were recorded on a desktop computer with minimal background processes. Precise timing software was used over the system clock for extra accuracy. Sorting algorithms were rigorously tested multiple times and averaged to minimize error margins.</String>
+            </Fragments>
+          </NLPattern>
+        </OntologyText>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as description" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E3 Source Code of Algorithms" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyText>
+          <NLPattern>
+            <Fragments />
+          </NLPattern>
+        </OntologyText>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as description" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="E2 Python Documentation in Sorting" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyText>
+          <NLPattern>
+            <Fragments>
+              <String>"The Timsort algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."</String>
             </Fragments>
           </NLPattern>
         </OntologyText>

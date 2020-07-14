@@ -16,7 +16,7 @@
 <IntelligenceQuestionExample version="1.1" index="0" main="true">
       <NLPattern>
         <Fragments>
-          <String>What is the best sorting algorithm overall?</String>
+          <String>What is the fastest sorting algorithm overall?</String>
         </Fragments>
       </NLPattern>
       <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
@@ -39,14 +39,6 @@
       </NLPattern>
       <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
     </HypothesisExample>
-<HypothesisExample version="1.0" index="3" negation="false">
-      <NLPattern>
-        <Fragments>
-          <String>O(n) Algorithms</String>
-        </Fragments>
-      </NLPattern>
-      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
-    </HypothesisExample>
 <HypothesisExample version="1.0" index="4" negation="false">
       <NLPattern>
         <Fragments>
@@ -58,17 +50,9 @@
 <HypothesisExample version="1.0" index="5" negation="false">
       <NLPattern>
         <Fragments>
-          <String>TimSort</String>
+          <String>The best performing algorithm in this category was TimSort.</String>
         </Fragments>
       </NLPattern>
-    </HypothesisExample>
-<HypothesisExample version="1.0" index="8" negation="false">
-      <NLPattern>
-        <Fragments>
-          <String>It is generally accepted by many computer scientists that algorithms of this complexity are the most efficient for most cases.</String>
-        </Fragments>
-      </NLPattern>
-      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="very likely" />
     </HypothesisExample>
 <HypothesisExample version="1.0" index="9" negation="false">
       <NLPattern>
@@ -88,21 +72,21 @@
 <HypothesisExample version="1.0" index="11" negation="false">
       <NLPattern>
         <Fragments>
-          <String>These algorithms perform better on small data sets due to their simplicity.</String>
+          <String>These algorithms perform better on smaller, partially sorted data sets due to their simplicity, especially Insertion Sort.</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
 <HypothesisExample version="1.0" index="12" negation="false">
       <NLPattern>
         <Fragments>
-          <String>These algorithms performed the worst out of all the tests.</String>
+          <String>These algorithms performed the worst out of all the tests. The worst performing algorithm came from this category.</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
 <HypothesisExample version="1.0" index="13" negation="false">
       <NLPattern>
         <Fragments>
-          <String>All of these algorithms sorted the data set under a second.</String>
+          <String>All of these algorithms performed faster than average.</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -134,6 +118,7 @@
           </OntologyEntity>
         </Fragments>
       </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
     </HypothesisExample>
 <HypothesisExample version="1.0" index="17" negation="false">
       <NLPattern>
@@ -143,20 +128,90 @@
           </OntologyEntity>
         </Fragments>
       </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="18" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>TimSort had the best time for all the algorithms at .0008 seconds, roughly a tenth of the next fastest algorithm.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="19" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>The best performing algorithm in this category was Selection Sort.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="20" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Though it was the best of all O(n^2) algorithms, it still performed significantly slower than algorithms of other categories. This particular algorithm performed about average.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="21" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="22" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E3 Source Code of Algorithms" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="23" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>The best performing algorithm in this category was Quick Sort.</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="24" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="25" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="E1 Results of Sorting Times for n at 10000" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="26" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>sub-hypothesis</String>
+        </Fragments>
+      </NLPattern>
     </HypothesisExample>
 </HypothesisExamples>
 <ArgumentStepExamples>
 <ArgumentStepExample version="1.0" index="0" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
-      </SubHypotheses>
-    </ArgumentStepExample>
-<ArgumentStepExample version="1.0" index="2" favoring="true">
-      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
-      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
-      <SubHypotheses>
-        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="8" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="3" favoring="true">
@@ -174,36 +229,42 @@
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="5" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="likely" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="11" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="6" favoring="false">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="7" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="very likely" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="8" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="14" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="9" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="15" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="10" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="almost certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
@@ -213,6 +274,67 @@
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="17" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="12" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="18" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="13" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="14" favoring="false">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="almost certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="15" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="21" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="16" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="11" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="22" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="17" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="23" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="18" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="23" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="24" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="19" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 4 System" name="certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="18" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="25" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="20" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="26" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>
